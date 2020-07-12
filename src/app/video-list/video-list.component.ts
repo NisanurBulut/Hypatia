@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video-list.component.css']
 })
 export class VideoListComponent implements OnInit {
-
+  title = 'Hypatia!';
+  videoListesi = ['Video1','video2'];
   constructor() { }
 
   ngOnInit() {
