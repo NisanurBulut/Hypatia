@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoListComponent implements OnInit {
   title = 'Hypatia!';
-  videoListesi = ['Video1','video2'];
+  videoListesi = [{ name: 'Video1', slug: 'item1' },
+  { name: 'video2', slug: 'item2' }];
   constructor() { }
 
   ngOnInit() {

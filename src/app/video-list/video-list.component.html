@@ -1,4 +1,6 @@
 {{title}}
 <p *ngFor='let item of videoListesi'>
-item
+    <a href="videos/{{item.slug}}">Video Ad : {{item.name}}</a>
+
+    <a href="{{item.slug}}">Video Ad : {{item.name}}</a>
 </p>
