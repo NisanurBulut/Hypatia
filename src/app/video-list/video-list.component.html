@@ -1,7 +1,7 @@
 {{title}}
 <div *ngFor='let item of videoListesi'>
     <h1>{{item.name}}</h1>
-    <div style="position:relative;">
+    <div style="position:relative;" *ngIf="item.embed">
         <video width="300" height="150" controls>
             <source src="{{item.embed}}" type="video/mp4"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media;

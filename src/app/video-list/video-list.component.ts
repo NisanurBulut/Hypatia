@@ -26,5 +26,7 @@ export class VideoListComponent implements OnInit {
 
   ngOnInit() {
   }
+getEmbedUrl(item){
 
+}
 }

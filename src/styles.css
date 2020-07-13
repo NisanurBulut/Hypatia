@@ -1,1 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+.main-cpntainer{
+    min-height: 800px;
+    margin-bottom: 20px;
+}
