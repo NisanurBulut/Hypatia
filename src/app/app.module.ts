@@ -4,11 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // third party imports
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
+import { HomeComponent } from './home/home.component';
 import { SafePipe } from './Utility/safe.pipe';
 
 @NgModule({
@@ -16,11 +18,14 @@ import { SafePipe } from './Utility/safe.pipe';
     AppComponent,
     VideoListComponent,
     VideoDetailComponent,
-    SafePipe
+    SafePipe,
+    HomeComponent
   ],
   imports: [
-    BrowserAnimationsModule,
+    // ngx-bootstrap
+    CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule
   ],

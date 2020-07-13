@@ -2,3 +2,10 @@
     min-height: 800px;
     margin-bottom: 20px;
 }
+.img-main-carousel{
+    max-height:500px;
+    margin: 0 auto;
+}
+.carousel.control.right,.carousel.control.left{
+    cursor: pointer;
+}
