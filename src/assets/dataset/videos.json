@@ -3,12 +3,16 @@
       "name": "Video1",
       "slug": "item1",
       "description":"Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.",
-      "embed":"https://img-s2.onedio.com/id-590a4709b5559ce428007909/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1a53dae1723e27c0492481b246fb521f779366d5.webm"
+      "embed":"https://img-s2.onedio.com/id-590a4709b5559ce428007909/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1a53dae1723e27c0492481b246fb521f779366d5.webm",
+      "videoPath":"../../assets/Videos/1_dogruKesisim.webm",
+      "imagePath":""
     },
     {
       "name": "video2",
       "slug": "item2",
       "description":"Dairenin alanı, üçgenin alanı üzerinden görsel olarak anlatılmış.",
-      "embed":"https://img-s1.onedio.com/id-590a47515e16b4d328c0c4a2/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1780fb3bebbd718cdbd4bf7728dd4125fe6a04e7.webm"
+      "embed":"https://img-s1.onedio.com/id-590a47515e16b4d328c0c4a2/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1780fb3bebbd718cdbd4bf7728dd4125fe6a04e7.webm",
+      "videoPath":"../../assets/Videos/2_daireAlan.webm",
+      "imagePath":""
     }
   ]

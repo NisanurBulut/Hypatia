@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // third party imports
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
@@ -27,7 +27,7 @@ import { SafePipe } from './Utility/safe.pipe';
     CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     BrowserAnimationsModule,
-    HttpClient,
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

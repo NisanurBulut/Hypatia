@@ -8,26 +8,13 @@ import { HttpClient } from '@angular/common/http';
 export class VideoListComponent implements OnInit, OnDestroy {
   title = 'Hypatia!';
   private req: any;
-  videoListesi = [
-    {
-      name: 'Video1',
-      slug: 'item1',
-      description: 'Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.',
-      embed: '../../assets/Videos/dogruKesisim.webm'
-    },
-    {
-      name: 'video2',
-      slug: 'item2',
-      description: 'Dairenin alanı, üçgenin alanı üzerinden görsel olarak anlatılmış.',
-      embed: '../../assets/Videos/daireAlan.webm'
-    }
-  ];
+  videoListesi: [any];
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.req = this.http.get('assets/dataset/videos.json')
-      .subscribe(data => {
-        console.log(data);
+      .subscribe(resp => {
+        this.videoListesi = resp as [any];
       });
   }
   ngOnDestroy() {
