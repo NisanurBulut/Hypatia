@@ -1,32 +1,18 @@
 <div class="row">
   <div class="col-sm-12">
     <carousel class="text-center">
-      <slide>
-          <a href="/videos/item1">
+      <slide *ngFor="let image of homeImageList">
+          <a class="" (click)="preventNormal($event,image)">
         <img
           class="img-main-carousel"
-          src="../../assets/images/dogru.PNG"
+          [src]='image.imagePath'
           alt="first slide"
         />
     </a>
         <div class="carousel-caption d-none d-md-block">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          <p><a class="btn btn-default" href="/videos/item1">Video1</a></p>
-        </div>
-      </slide>
-      <slide>
-          <a href="/videos/item2">
-        <img
-          class="img-main-carousel"
-          src="../../assets/images/daireAlan.PNG"
-          alt="second slide"
-        />
-    </a>
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p><a class="btn btn-default" href="/videos/item2">Video2</a></p>
+          <h3>{{image.title}}</h3>
+          <p>{{image.description}}</p>
+          <p><a class="btn btn-default" href="{{image.videoLink}}">Görüntüle</a></p>
         </div>
       </slide>
     </carousel>
