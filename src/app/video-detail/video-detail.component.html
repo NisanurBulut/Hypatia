@@ -1,0 +1,8 @@
+<div style="position:relative;" *ngIf="video.videoPath">
+    <video width="300" height="150" controls>
+        <source src="{{video.videoPath}}" type="video/mp4"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+        gyroscope; picture-in-picture" allowfullscreen>
+    </video>
+</div>
+<p>{{video.description}}</p>

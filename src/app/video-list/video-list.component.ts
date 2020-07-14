@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import {VideoModel} from '../../model/VideoModel';
 import { VideoService } from '../services/videos.service';
 @Component({
   selector: 'app-video-list',
@@ -8,13 +9,13 @@ import { VideoService } from '../services/videos.service';
 export class VideoListComponent implements OnInit, OnDestroy {
   title = 'Hypatia!';
   private req: any;
-  videoListesi: [any];
+  videoListesi: [VideoModel];
   constructor(private vs: VideoService) { }
 
   ngOnInit() {
     this.req = this.vs.getDataset()
       .subscribe(resp => {
-        this.videoListesi = resp as [any];
+        this.videoListesi = resp as [VideoModel];
       });
   }
   ngOnDestroy() {

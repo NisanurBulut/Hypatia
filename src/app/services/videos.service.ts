@@ -29,6 +29,20 @@ export class VideoService {
         }))
       .pipe(catchError(this.handleError));
   }
+  search(query) {
+    return this.http.get(endPoint)
+      .pipe(
+        map(resp => {
+          let data = [];
+          let req = (resp as [any]).filter(item => {
+            if (item.slug.indexOf(query) >= 0) {
+              data.push(item);
+            }
+          });
+          return data;
+        }))
+      .pipe(catchError(this.handleError));
+  }
   private handleError(error: any, caught: any): any {
 
   }

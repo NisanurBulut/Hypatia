@@ -1,3 +1,16 @@
 <p *ngIf='query'>
     <b>{{query}}</b> bunu mu demek istemiştiniz ?
 </p>
+
+<div *ngFor='let item of videoListesi'>
+    <h1><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
+        {{item.name}}</a></h1>
+    <div style="position:relative;" *ngIf="item.videoPath">
+        <video width="300" height="150" controls>
+            <source src="{{item.videoPath}}" type="video/mp4"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media;
+            gyroscope; picture-in-picture" allowfullscreen>
+        </video>
+    </div>
+    <p>{{item.description}}</p>
+</div>

@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { VideoModel } from '../../model/VideoModel';
+import { VideoService } from '../services/videos.service';
 
 
 @Component({
@@ -9,14 +10,19 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  homeImageList: [any];
+  homeImageList: [VideoModel] = ([] as unknown as [VideoModel]);
   private req: any;
-  constructor(private router: Router, private http: HttpClient) { }
+  constructor(private router: Router, private vs: VideoService) { }
 
   ngOnInit() {
-    this.req = this.http.get('assets/dataset/videos.json')
+    this.req = this.vs.getDataset()
       .subscribe(resp => {
-        this.homeImageList = resp as [any];
+        (resp as [VideoModel]).filter(d => {
+          if (d.featured === true) {
+            let item = d;
+            this.homeImageList.push(item);
+          }
+        });
       });
   }
   ngOnDestroy() {

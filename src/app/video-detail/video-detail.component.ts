@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { VideoModel } from '../../model/VideoModel';
 
 import { VideoService } from '../services/videos.service';
 @Component({
@@ -9,39 +9,22 @@ import { VideoService } from '../services/videos.service';
   styleUrls: ['./video-detail.component.css']
 })
 export class VideoDetailComponent implements OnInit, OnDestroy {
-  private routeSub: Subscription;
+  private routeSub: any;
   private req: any;
-  private slug: string;
-  private video: any;
-  // private video: {
-  //   name: '',
-  //   slug: '',
-  //   description: '',
-  //   embed: '',
-  //   videoPath: '',
-  //   imagePath: ''
-  // };
+  video: VideoModel;
+  slug: string;
   constructor(private route: ActivatedRoute, private vs: VideoService) { }
 
   ngOnInit() {
-    // this.req = this.http.get('assets/dataset/videos.json')
-    //   .subscribe(resp => {
-    //     (resp as [any]).filter(item => {
-    //       if (item.slug === this.slug) {
-    //         this.video = item;
-    //       }
-    //     });
-    //   });
-
     this.routeSub = this.route.params.subscribe(params => {
-      this.slug = params['slug'];
-      this.vs.getVideoDetail(this.slug).subscribe(data => {
-        this.video = data;
+      this.slug = params.slug;
+      this.req = this.vs.getVideoDetail(this.slug).subscribe(data => {
+        this.video = data as VideoModel;
       });
     });
   }
   ngOnDestroy() {
     this.routeSub.unsubscribe();
-    // this.req.unsubscribe();
+    this.req.unsubscribe();
   }
 }
