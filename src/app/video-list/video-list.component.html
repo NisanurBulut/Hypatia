@@ -1,12 +1,12 @@
 {{title}}
 <div *ngFor='let item of videoListesi'>
-    <h1>{{item.name}}</h1>
+    <h1><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
+        {{item.name}}</a></h1>
     <div style="position:relative;" *ngIf="item.embed">
         <video width="300" height="150" controls>
             <source src="{{item.videoPath}}" type="video/mp4"
             frameborder="0" allow="accelerometer; autoplay; encrypted-media;
             gyroscope; picture-in-picture" allowfullscreen>
-            Your browser does not support the video tag.
         </video>
     </div>
     <p>{{item.description}}</p>

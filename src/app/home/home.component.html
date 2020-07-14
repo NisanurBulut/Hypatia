@@ -2,7 +2,7 @@
   <div class="col-sm-12">
     <carousel class="text-center" *ngIf="homeImageList">
       <slide *ngFor="let image of homeImageList">
-          <a class="" (click)="preventNormal($event,image)">
+          <a routerLink='/videos/{{image.slug}}' routerLinkActive="active">
         <img
           class="img-main-carousel"
           [src]='image.imagePath'
@@ -12,7 +12,7 @@
         <div class="carousel-caption d-none d-md-block">
           <h3>{{image.name}}</h3>
           <p>{{image.description}}</p>
-          <p><a class="btn btn-default" href="/videos/{{image.slug}}">Görüntüle</a></p>
+          <p><a class="btn btn-default" routerLink='/videos/{{image.slug}}' routerLinkActive="active">Görüntüle</a></p>
         </div>
       </slide>
     </carousel>
