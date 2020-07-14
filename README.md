@@ -1,7 +1,6 @@
 # Hypatia
 
-![Agora Filminde Hypatia]
-(https://github.com/NisanurBulut/Hypatia/blob/master/src/assets/Trailer/hypatiaFromAgora.jpg)
+![Agora Filminde Hypatia](https://github.com/NisanurBulut/Hypatia/blob/master/src/assets/Trailer/hypatiaFromAgora.jpg)
 </br>
 Bu proje Hypatia içindir.
 
