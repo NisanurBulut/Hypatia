@@ -1,20 +1,147 @@
 [
     {
-      "name": "Video1",
+      "name": "Teğet Geçen Doğrular",
       "slug": "item1",
       "description":"Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.",
-      "embed":"https://img-s2.onedio.com/id-590a4709b5559ce428007909/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1a53dae1723e27c0492481b246fb521f779366d5.webm",
       "videoPath":"../../assets/Videos/1_dogruKesisim.webm",
       "imagePath":"../../assets/images/1_dogruKesisim.PNG",
       "featured":true
     },
     {
-      "name": "video2",
+      "name": "Daire Alan Gösterimi",
       "slug": "item2",
       "description":"Dairenin alanı, üçgenin alanı üzerinden görsel olarak anlatılmış.",
-      "embed":"https://img-s1.onedio.com/id-590a47515e16b4d328c0c4a2/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-1780fb3bebbd718cdbd4bf7728dd4125fe6a04e7.webm",
       "videoPath":"../../assets/Videos/2_daireAlan.webm",
       "imagePath":"../../assets/images/2_daireAlan.PNG",
+      "featured":true
+    },
+    {
+      "name": "Arşimet Prensibi",
+      "slug": "item3",
+      "description":"Arşimet prensibi, bir sıvı içindeki katı bir cismin, taşırdığı sıvının ağırlığına eşit bir batmazlık kuvveti ile yukarıya itildiğini belirtir.",
+      "videoPath":"../../assets/Videos/3_arsimetPrensibi.webm",
+      "imagePath":"../../assets/images/3_arsimetPrensibi.PNG",
+      "featured":true
+    },
+    {
+      "name": "Basketbolda Fizik",
+      "slug": "item4",
+      "description":"Sürtünmesiz olduğu kabül edilen bir ortamda, belirli bir h yüksekliğinden ilk hızsız bırakılan cisim serbet düşme hareketi yapar.",
+      "videoPath":"../../assets/Videos/4_basketboldaFizik.webm",
+      "imagePath":"../../assets/images/4_basketboldaFizik.PNG",
+      "featured":true
+    },
+    {
+      "name": "Çap Gösterimi",
+      "slug": "item5",
+      "description":"Çapı 1 birim olan dairenin çevresinin π ye eşit olmasını daha net gösteren görsel",
+      "videoPath":"../../assets/Videos/5_capGosterimi.webm",
+      "imagePath":"../../assets/images/5_capGosterimi.PNG",
+      "featured":true
+    },
+    {
+      "name": "Dairenin Alanının Görsel Anlatımı",
+      "slug": "item6",
+      "description":"Dairenin alanının görsel anlatımı",
+      "videoPath":"../../assets/Videos/6_daireAlanGosterimi.webm",
+      "imagePath":"../../assets/images/6_daireAlanGosterimi.PNG",
+      "featured":true
+    },
+    {
+      "name": "Doğrusal Hareketler",
+      "slug": "item7",
+      "description":"Doğrusal hareketler birleşirse...",
+      "videoPath":"../../assets/Videos/7_dogrusalHareketler.webm",
+      "imagePath":"../../assets/images/7_dogrusalHareketler.PNG",
+      "featured":true
+    },
+    {
+      "name": "Düzgün Çokgenler",
+      "slug": "item8",
+      "description":"Düzgün çokgenler",
+      "videoPath":"../../assets/Videos/8_duzgunCokgenler.webm",
+      "imagePath":"../../assets/images/8_duzgunCokgenler.PNG",
+      "featured":true
+    },
+    {
+      "name": "Düzlemde Sabit Çizgiler",
+      "slug": "item9",
+      "description":"Düzlemde, her köşenin sabit bir çizgi üzerinde hareket etmesini sağlayan bir üçgen örneği.",
+      "videoPath":"../../assets/Videos/9_duzlemdeSabitCizgiler.webm",
+      "imagePath":"../../assets/images/9_duzlemdeSabitCizgiler.PNG",
+      "featured":true
+    },
+    {
+      "name": "Elipste Ortak Noktalar",
+      "slug": "item10",
+      "description":"Elipsin odak noktalarından birinden fırlatılan ok, daima diğer odak noktasına ulaşmaktadır",
+      "embed":"https://img-s2.onedio.com/id-590a4a321c10c60929742fa1/rev-0/w-635/f-jpg-gif-webp-webm-mp4/s-05e87ccc2ac4a7aaec1fca907066c1e21d62b639.webm",
+      "videoPath":"../../assets/Videos/10_elipsOdakNoktasi.webm",
+      "imagePath":"../../assets/images/10_elipsOdakNoktasi.PNG",
+      "featured":true
+    },
+    {
+      "name": "En Uzun Doğrular",
+      "slug": "item11",
+      "description":"En uzun doğru parçasının uzunluğu, her zaman diğer ikisinin toplamına eşittir.",
+      "videoPath":"../../assets/Videos/11_enUzunDogru.webm",
+      "imagePath":"../../assets/images/11_enUzunDogru.PNG",
+      "featured":true
+    },
+    {
+      "name": "Küpler Toplamı..",
+      "slug": "item12",
+      "description":"1'den n'e kadar olan sayıların küpleri toplamı, 1'den n'e kadar olan sayıların toplamının karesine eşittir.",
+      "videoPath":"../../assets/Videos/12_kupToplami.webm",
+      "imagePath":"../../assets/images/12_kupToplami.PNG",
+      "featured":true
+    },
+    {
+      "name": "Kürenin Alan Formülü",
+      "slug": "item13",
+      "description":"Kürenin alan formülü",
+      "videoPath":"../../assets/Videos/13_kureninAlanFormulu.webm",
+      "imagePath":"../../assets/images/13_kureninAlanFormulu.PNG",
+      "featured":true
+    },
+    {
+      "name": "Pisagor Teoremi",
+      "slug": "item14",
+      "description":"Daha net bir anlatımla Pisagor teoremi",
+      "videoPath":"../../assets/Videos/14_pisagorTeoremi.webm",
+      "imagePath":"../../assets/images/14_pisagorTeoremi.PNG",
+      "featured":true
+    },
+    {
+      "name": "Pisagorun Adalet Kupası",
+      "slug": "item15",
+      "description":"Pisagor'un adalet kupası. Sınırı aştığınız anda sıvıyı tamamen boşaltıyor.",
+      "videoPath":"../../assets/Videos/15_pisagorunAdaletKupası.webm",
+      "imagePath":"../../assets/images/15_pisagorunAdaletKupası.PNG",
+      "featured":true
+    },
+    {
+      "name": "Radyan Nedir ?",
+      "slug": "item16",
+      "description":"Radyan, bir dairede yarıçap uzunluğundaki yay parçasını gören merkez açıya eşit açı ölçme birimidir. ",
+      "videoPath":"../../assets/Videos/16_radyanNedir.webm",
+      "imagePath":"../../assets/images/16_radyanNedir.PNG",
+      "featured":true
+    },
+    {
+      "name": "Sinüs Fonksiyonu",
+      "slug": "item17",
+      "description":"Dairesel hareketin oluşturduğu sinüs fonksiyonu grafiği",
+      "videoPath":"../../assets/Videos/17_sinusFonksiyonu.webm",
+      "imagePath":"../../assets/images/17_sinusFonksiyonu.PNG",
+      "featured":true
+    },
+    {
+      "name": "Trigonometrik Fonksiyonların Grafikleri",
+      "slug": "item18",
+      "description":"Trigonometrik fonksiyonların grafikleri",
+      "videoPath":"../../assets/Videos/18_trigonometrikFonksiyonlar.webm",
+      "imagePath":"../../assets/images/18_trigonometrikFonksiyonlar.PNG",
       "featured":true
     }
   ]

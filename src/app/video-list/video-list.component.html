@@ -1,13 +1,13 @@
-{{title}}
-<div *ngFor='let item of videoListesi'>
-
+<div class="row">
+  <div class="col-sm-3 col-md-4" *ngFor='let item of videoListesi'>
     <div class="thumbnail">
-     <a  routerLink='/videos/{{item.slug}}' routerLinkActive="active"><img [src]="item.imagePath" alt="{{item.name}}"></a>
-        <div class="caption">
+     <a  routerLink='/videos/{{item.slug}}' routerLinkActive="active" *ngIf="item.imagePath">
+      <img style="width: 250px;height:250px;" [src]="item.imagePath" alt="{{item.name}}"></a>
+        <div class="caption text-center">
             <h3><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
                 {{item.name}}</a></h3>
-
-          <p><a routerLink='/videos/{{item.slug}}' routerLinkActive="active" class="btn btn-primary" role="button">Görüntüle</a></p>
+          <p class="text-center"><a routerLink='/videos/{{item.slug}}' routerLinkActive="active" class="btn btn-primary" role="button">Görüntüle</a></p>
         </div>
       </div>
+</div>
 </div>
