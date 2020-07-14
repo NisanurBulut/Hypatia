@@ -11,7 +11,7 @@ import { VideoService } from '../services/videos.service';
 export class VideoDetailComponent implements OnInit, OnDestroy {
   private routeSub: any;
   private req: any;
-  video: VideoModel;
+  video: VideoModel={};
   slug: string;
   constructor(private route: ActivatedRoute, private vs: VideoService) { }
 

@@ -1,13 +1,13 @@
 {{title}}
 <div *ngFor='let item of videoListesi'>
-    <h1><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
-        {{item.name}}</a></h1>
-    <div style="position:relative;" *ngIf="item.embed">
-        <video width="300" height="150" controls>
-            <source src="{{item.videoPath}}" type="video/mp4"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-            gyroscope; picture-in-picture" allowfullscreen>
-        </video>
-    </div>
-    <p>{{item.description}}</p>
+
+    <div class="thumbnail">
+     <a  routerLink='/videos/{{item.slug}}' routerLinkActive="active"><img [src]="item.imagePath" alt="{{item.name}}"></a>
+        <div class="caption">
+            <h3><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
+                {{item.name}}</a></h3>
+
+          <p><a routerLink='/videos/{{item.slug}}' routerLinkActive="active" class="btn btn-primary" role="button">Görüntüle</a></p>
+        </div>
+      </div>
 </div>

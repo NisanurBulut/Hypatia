@@ -12,6 +12,7 @@ import { VideoService } from '../services/videos.service';
 export class HomeComponent implements OnInit, OnDestroy {
   homeImageList: [VideoModel] = ([] as unknown as [VideoModel]);
   private req: any;
+  anaEkranVarsaliyanFoto = 'assets/Trailer/logo-hypatia.jpg';
   constructor(private router: Router, private vs: VideoService) { }
 
   ngOnInit() {
