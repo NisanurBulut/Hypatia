@@ -11,6 +11,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'search',
+    component: VideoListComponent
+  },
+  {
     path: 'videos',
     component: VideoListComponent
   },

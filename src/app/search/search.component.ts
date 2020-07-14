@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchComponent implements OnInit {
   searchQuery: string = '';
-  constructor() { }
-  submitSearch(event,formData){
-console.log(event);
+  constructor(private router: Router) { }
+  submitSearch(formData) {
+    let query = formData.value['q'];
+    console.log(query);
+    if (query) {
+      this.router.navigate(['/search', { q: query }]);
+    }
   }
   ngOnInit() {
   }
