@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
   searchQuery: string = '';
   constructor() { }
-
+  submitSearch(event,formData){
+console.log(event);
+  }
   ngOnInit() {
   }
 
