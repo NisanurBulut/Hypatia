@@ -7,12 +7,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchDetailComponent implements OnInit, OnDestroy {
   private routeSub: any;
-  query:string;
+  query: string;
   constructor(private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.routeSub = this.activatedRoute.params.subscribe(params => {
-this.query=params['q'];
+      this.query = params['q'];
     });
   }
   ngOnDestroy() {

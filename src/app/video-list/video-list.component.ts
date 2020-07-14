@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { VideoService } from '../services/videos.service';
 @Component({
   selector: 'app-video-list',
   templateUrl: './video-list.component.html',
@@ -9,18 +9,15 @@ export class VideoListComponent implements OnInit, OnDestroy {
   title = 'Hypatia!';
   private req: any;
   videoListesi: [any];
-  constructor(private http: HttpClient) { }
+  constructor(private vs: VideoService) { }
 
   ngOnInit() {
-    this.req = this.http.get('assets/dataset/videos.json')
+    this.req = this.vs.getDataset()
       .subscribe(resp => {
         this.videoListesi = resp as [any];
       });
   }
   ngOnDestroy() {
     this.req.unsubscribe();
-  }
-  getEmbedUrl() {
-
   }
 }

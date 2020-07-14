@@ -15,8 +15,9 @@ import { HomeComponent } from './home/home.component';
 
 import { SearchComponent } from './search/search.component';
 import { SearchDetailComponent } from './search-detail/search-detail.component';
-import { SafePipe } from './Utility/safe.pipe';
 
+import { SafePipe } from './Utility/safe.pipe';
+import {VideoService} from './services/videos.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +38,7 @@ import { SafePipe } from './Utility/safe.pipe';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [VideoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
