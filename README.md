@@ -2,4 +2,4 @@
 
 Angular version 8.3.6.
 
-İskenderiyeli düşünür, filozof ve matematikçi Hypatia isimli kadın, tüm bunların yanında oldukça etkileyici bir güzelliğe sahiptir.. Ancak, ortaçağ Avrupa’sının değer yargıları onun yaşama arzusunu elinden alacaktır. Hypatia, dinciler tarafından hak etmediği suçlamalara maruz kalacak ve erkek egemen toplumun vahşiyatında ortada kalacaktır.. Tüm bunlara rağmen adını tarihe bir düşünce ve aydınlanma savaşçısı olarak yazdıracaktır..
+Hypatia, M.S. 370 civarında doğdu. Tam tarih bilinmiyor ama kız çocuklarına nadiren eğitim verildiği ve kadınların kendileri için belirlenen rollerin dışına çıkmasının yasaklandığı bir zamanda Theon, kızının birinci sınıf bir eğitimden faydalanmasını sağladı. Hypatia’ya matematik, astronomi ve felsefenin inceliklerini öğretti ve kızı da yetenekli bir öğrenci olduğunu kısa sürede kanıtladı. Erken dönem Hristiyan tarihçi Sokrates Skolastikus, onun babasının sıra dışı doğasını miras aldığını ve babasından aldığı matematik eğitimiyle yetinmeyip, fark edilir bir biçimde başka öğrenme yollarına da yöneldiğini anlatıyor.
