@@ -2,7 +2,7 @@
   <div class="col-sm-3 col-md-4" *ngFor='let item of videoListesi'>
     <div class="thumbnail">
      <a  routerLink='/videos/{{item.slug}}' routerLinkActive="active" *ngIf="item.imagePath">
-      <img style="width: 250px;height:250px;" [src]="item.imagePath" alt="{{item.name}}"></a>
+      <img class="img-responsive  img-center" style="width: 350px;height:350px;" [src]="item.imagePath" alt="{{item.name}}"></a>
         <div class="caption text-center">
             <h3><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
                 {{item.name}}</a></h3>

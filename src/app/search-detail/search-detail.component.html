@@ -1,16 +1,16 @@
 <p *ngIf='query'>
     <b>{{query}}</b> bunu mu demek istemiştiniz ?
 </p>
-
-<div *ngFor='let item of videoListesi'>
-    <h1><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
-        {{item.name}}</a></h1>
-    <div style="position:relative;" *ngIf="item.videoPath">
-        <video width="300" height="150" controls>
-            <source src="{{item.videoPath}}" type="video/mp4"
-            frameborder="0" allow="accelerometer; autoplay; encrypted-media;
-            gyroscope; picture-in-picture" allowfullscreen>
-        </video>
-    </div>
-    <p>{{item.description}}</p>
-</div>
+<div class="row">
+    <div class="col-sm-3 col-md-4" *ngFor='let item of videoListesi'>
+      <div class="thumbnail">
+       <a  routerLink='/videos/{{item.slug}}' routerLinkActive="active" *ngIf="item.imagePath">
+        <img class="img-responsive  img-center" style="width: 350px;height:350px;" [src]="item.imagePath" alt="{{item.name}}"></a>
+          <div class="caption text-center">
+              <h3><a routerLink='/videos/{{item.slug}}' routerLinkActive="active">
+                  {{item.name}}</a></h3>
+            <p class="text-center"><a routerLink='/videos/{{item.slug}}' routerLinkActive="active" class="btn btn-primary" role="button">Görüntüle</a></p>
+          </div>
+        </div>
+  </div>
+  </div>

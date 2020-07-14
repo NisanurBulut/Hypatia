@@ -1,8 +1,14 @@
-<div style="position:relative;" *ngIf="video.videoPath">
-    <video width="300" height="150" controls>
-        <source src="{{video.videoPath}}" type="video/mp4"
+<div *ngIf="!video">Yükleniyor...</div>
+<h1>{{video.name}}</h1>
+<hr>
+<div class="text-center" *ngIf="video.videoPath">
+    <video width="550px;" height="400px;" controls>
+        <source src="{{video.videoPath}}"
+        type="video/mp4"
         frameborder="0" allow="accelerometer; autoplay; encrypted-media;
         gyroscope; picture-in-picture" allowfullscreen>
     </video>
+    <div class="text-center" *ngIf="video.imagePath && !video.videoPath">
+        <img class="img-responsive img-center" [src]="video.imagePath" alt="{{video.name}} Resim"></div>
 </div>
 <p>{{video.description}}</p>
