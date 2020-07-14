@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
-
+import { FormsModule } from '@angular/forms';
 // third party imports
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
@@ -31,6 +31,7 @@ import { SearchComponent } from './search/search.component';
     BrowserAnimationsModule,
     HttpClientModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
