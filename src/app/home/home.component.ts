@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -7,40 +8,19 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-  homeImageList = [
-    {
-      imagePath: '../../assets/images/dogru.PNG',
-      title: 'Doğru Kesişim Gösterimi',
-      description: 'Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.',
-      videoPath: '../../assets/videos/dogru.webm',
-      videoLink: '/videos/item1'
-    },
-    {
-      imagePath: '../../assets/images/dogru.PNG',
-      title: 'Doğru Kesişim Gösterimi',
-      description: 'Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.',
-      videoPath: '../../assets/videos/dogru.webm',
-      videoLink: '/videos/item1'
-    },
-    {
-      imagePath: '../../assets/images/dogru.PNG',
-      title: 'Doğru Kesişim Gösterimi',
-      description: 'Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.',
-      videoPath: '../../assets/videos/dogru.webm',
-      videoLink: '/videos/item1'
-    },
-    {
-      imagePath: '../../assets/images/dogru.PNG',
-      title: 'Doğru Kesişim Gösterimi',
-      description: 'Aynı düzlemdeki 3 çemberi teğet geçen doğruların kesişim noktaları daima doğrusaldır.',
-      videoPath: '../../assets/videos/dogru.webm',
-      videoLink: '/videos/item1'
-    }
-  ];
-  constructor(private router: Router) { }
+export class HomeComponent implements OnInit, OnDestroy {
+  homeImageList: [any];
+  private req: any;
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit() {
+    this.req = this.http.get('assets/dataset/videos.json')
+      .subscribe(resp => {
+        this.homeImageList = resp as [any];
+      });
+  }
+  ngOnDestroy() {
+    this.req.unsubscribe();
   }
   preventNormal(event: MouseEvent, image: any) {
     if (!image.prevented) {
