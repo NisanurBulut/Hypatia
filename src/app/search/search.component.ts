@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgForOf } from '@angular/common';
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -10,12 +12,12 @@ export class SearchComponent implements OnInit {
   constructor(private router: Router) { }
   submitSearch(formData) {
     let query = formData.value['q'];
-    console.log(query);
+
     if (query) {
+      formData.reset();
       this.router.navigate(['/search', { q: query }]);
     }
   }
   ngOnInit() {
   }
-
 }

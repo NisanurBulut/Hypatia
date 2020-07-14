@@ -35,7 +35,7 @@ export class VideoService {
         map(resp => {
           let data = [];
           let req = (resp as [any]).filter(item => {
-            if (item.slug.indexOf(query) >= 0) {
+            if (item.name.toUpperCase().indexOf(query.toUpperCase()) >= 0) {
               data.push(item);
             }
           });
