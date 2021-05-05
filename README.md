@@ -1,3 +1,8 @@
+## Bir Yıldız Verin! :star:
+
+Çözümünüzü öğrenmek veya başlatmak için bu projeyi beğendiyseniz veya kullanıyorsanız, lütfen ona bir yıldız verin. Teşekkürler!
+<hr>
+
 # Hypatia
 
 ###### Agora Filminde Hypatia
